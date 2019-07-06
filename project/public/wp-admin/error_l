@@ -1,0 +1,642 @@
+[18-Jun-2019 12:43:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1645
+Stack trace:
+#0 /var/www/project/public/wp-admin/setup-config.php(305): wpdb->db_connect()
+#1 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1645
+[18-Jun-2019 12:43:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1645
+Stack trace:
+#0 /var/www/project/public/wp-admin/setup-config.php(305): wpdb->db_connect()
+#1 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1645
+[18-Jun-2019 12:45:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1645
+Stack trace:
+#0 /var/www/project/public/wp-admin/setup-config.php(305): wpdb->db_connect()
+#1 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1645
+[18-Jun-2019 12:45:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1645
+Stack trace:
+#0 /var/www/project/public/wp-admin/setup-config.php(305): wpdb->db_connect()
+#1 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1645
+[18-Jun-2019 12:54:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1645
+Stack trace:
+#0 /var/www/project/public/wp-admin/setup-config.php(305): wpdb->db_connect()
+#1 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1645
+[18-Jun-2019 13:00:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1643
+Stack trace:
+#0 /var/www/project/public/wp-includes/wp-db.php(639): wpdb->db_connect()
+#1 /var/www/project/public/wp-includes/load.php(427): wpdb->__construct('root', '111111', 'localhost', 'mysql')
+#2 /var/www/project/public/wp-settings.php(120): require_wp_db()
+#3 /var/www/project/public/wp-config.php(89): require_once('/var/www/projec...')
+#4 /var/www/project/public/wp-load.php(37): require_once('/var/www/projec...')
+#5 /var/www/project/public/wp-admin/admin.php(34): require_once('/var/www/projec...')
+#6 /var/www/project/public/wp-admin/index.php(10): require_once('/var/www/projec...')
+#7 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1643
+[18-Jun-2019 13:01:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1643
+Stack trace:
+#0 /var/www/project/public/wp-includes/wp-db.php(639): wpdb->db_connect()
+#1 /var/www/project/public/wp-includes/load.php(427): wpdb->__construct('root', '111111', 'localhost', '127.0.0.1:3333')
+#2 /var/www/project/public/wp-settings.php(120): require_wp_db()
+#3 /var/www/project/public/wp-config.php(89): require_once('/var/www/projec...')
+#4 /var/www/project/public/wp-load.php(37): require_once('/var/www/projec...')
+#5 /var/www/project/public/wp-admin/admin.php(34): require_once('/var/www/projec...')
+#6 /var/www/project/public/wp-admin/index.php(10): require_once('/var/www/projec...')
+#7 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1643
+[18-Jun-2019 13:01:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1643
+Stack trace:
+#0 /var/www/project/public/wp-includes/wp-db.php(639): wpdb->db_connect()
+#1 /var/www/project/public/wp-includes/load.php(427): wpdb->__construct('root', '111111', 'localhost', '127.0.0.1:3333')
+#2 /var/www/project/public/wp-settings.php(120): require_wp_db()
+#3 /var/www/project/public/wp-config.php(89): require_once('/var/www/projec...')
+#4 /var/www/project/public/wp-load.php(37): require_once('/var/www/projec...')
+#5 /var/www/project/public/wp-admin/admin.php(34): require_once('/var/www/projec...')
+#6 /var/www/project/public/wp-admin/index.php(10): require_once('/var/www/projec...')
+#7 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1643
+[18-Jun-2019 13:01:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1643
+Stack trace:
+#0 /var/www/project/public/wp-includes/wp-db.php(639): wpdb->db_connect()
+#1 /var/www/project/public/wp-includes/load.php(427): wpdb->__construct('root', '111111', 'localhost', '127.0.0.1:3333')
+#2 /var/www/project/public/wp-settings.php(120): require_wp_db()
+#3 /var/www/project/public/wp-config.php(89): require_once('/var/www/projec...')
+#4 /var/www/project/public/wp-load.php(37): require_once('/var/www/projec...')
+#5 /var/www/project/public/wp-admin/admin.php(34): require_once('/var/www/projec...')
+#6 /var/www/project/public/wp-admin/index.php(10): require_once('/var/www/projec...')
+#7 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1643
+[18-Jun-2019 13:01:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1643
+Stack trace:
+#0 /var/www/project/public/wp-includes/wp-db.php(639): wpdb->db_connect()
+#1 /var/www/project/public/wp-includes/load.php(427): wpdb->__construct('root', '111111', 'localhost', '127.0.0.1:3333')
+#2 /var/www/project/public/wp-settings.php(120): require_wp_db()
+#3 /var/www/project/public/wp-config.php(89): require_once('/var/www/projec...')
+#4 /var/www/project/public/wp-load.php(37): require_once('/var/www/projec...')
+#5 /var/www/project/public/wp-admin/admin.php(34): require_once('/var/www/projec...')
+#6 /var/www/project/public/wp-admin/index.php(10): require_once('/var/www/projec...')
+#7 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1643
+[18-Jun-2019 13:02:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1643
+Stack trace:
+#0 /var/www/project/public/wp-includes/wp-db.php(639): wpdb->db_connect()
+#1 /var/www/project/public/wp-includes/load.php(427): wpdb->__construct('root', '111111', 'localhost', '127.0.0.1:3333')
+#2 /var/www/project/public/wp-settings.php(120): require_wp_db()
+#3 /var/www/project/public/wp-config.php(89): require_once('/var/www/projec...')
+#4 /var/www/project/public/wp-load.php(37): require_once('/var/www/projec...')
+#5 /var/www/project/public/wp-admin/admin.php(34): require_once('/var/www/projec...')
+#6 /var/www/project/public/wp-admin/index.php(10): require_once('/var/www/projec...')
+#7 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1643
+[18-Jun-2019 13:02:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/project/public/wp-includes/wp-db.php:1643
+Stack trace:
+#0 /var/www/project/public/wp-includes/wp-db.php(639): wpdb->db_connect()
+#1 /var/www/project/public/wp-includes/load.php(427): wpdb->__construct('root', 'mysql', 'intexsoft', '127.0.0.1:3333')
+#2 /var/www/project/public/wp-settings.php(120): require_wp_db()
+#3 /var/www/project/public/wp-config.php(89): require_once('/var/www/projec...')
+#4 /var/www/project/public/wp-load.php(37): require_once('/var/www/projec...')
+#5 /var/www/project/public/wp-admin/admin.php(34): require_once('/var/www/projec...')
+#6 /var/www/project/public/wp-admin/index.php(10): require_once('/var/www/projec...')
+#7 {main}
+  thrown in /var/www/project/public/wp-includes/wp-db.php on line 1643
+[24-Jun-2019 10:23:43 UTC] PHP Warning:  Произошла непредвиденная ошибка. Возможно, что-то не так с сайтом WordPress.org или с настройками вашего сервера. Если проблема не решится, обратитесь на <a href="https://ru.wordpress.org/support/">форумы поддержки</a>. (Не удалось установить защищённое соединение с WordPress.org. Пожалуйста, свяжитесь с администратором сервера.) in /var/www/project/public/wp-includes/update.php on line 160
+[24-Jun-2019 10:23:43 UTC] PHP Stack trace:
+[24-Jun-2019 10:23:43 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 10:23:43 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/index.php:10
+[24-Jun-2019 10:23:43 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[24-Jun-2019 10:23:43 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 10:23:43 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 10:23:43 UTC] PHP   6. _maybe_update_core() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 10:23:43 UTC] PHP   7. wp_version_check() /var/www/project/public/wp-includes/update.php:730
+[24-Jun-2019 10:23:43 UTC] PHP   8. trigger_error() /var/www/project/public/wp-includes/update.php:160
+[24-Jun-2019 10:23:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/update.php:160) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[24-Jun-2019 10:23:45 UTC] PHP Stack trace:
+[24-Jun-2019 10:23:45 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 10:23:45 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/index.php:10
+[24-Jun-2019 10:23:45 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[24-Jun-2019 10:23:45 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 10:23:45 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 10:23:45 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 10:23:45 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[24-Jun-2019 10:23:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/update.php:160) in /var/www/project/public/wp-includes/option.php on line 947
+[24-Jun-2019 10:23:46 UTC] PHP Stack trace:
+[24-Jun-2019 10:23:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 10:23:46 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 10:23:46 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 10:23:46 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[24-Jun-2019 10:23:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/update.php:160) in /var/www/project/public/wp-includes/option.php on line 948
+[24-Jun-2019 10:23:46 UTC] PHP Stack trace:
+[24-Jun-2019 10:23:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 10:23:46 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 10:23:46 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 10:23:46 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[24-Jun-2019 13:41:31 UTC] PHP Warning:  Произошла непредвиденная ошибка. Возможно, что-то не так с сайтом WordPress.org или с настройками вашего сервера. Если проблема не решится, обратитесь на <a href="https://ru.wordpress.org/support/">форумы поддержки</a>. (Не удалось установить защищённое соединение с WordPress.org. Пожалуйста, свяжитесь с администратором сервера.) in /var/www/project/public/wp-includes/update.php on line 384
+[24-Jun-2019 13:41:31 UTC] PHP Stack trace:
+[24-Jun-2019 13:41:31 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:41:31 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:10
+[24-Jun-2019 13:41:31 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:365
+[24-Jun-2019 13:41:31 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 13:41:31 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 13:41:31 UTC] PHP   6. wp_update_plugins() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 13:41:31 UTC] PHP   7. trigger_error() /var/www/project/public/wp-includes/update.php:384
+[24-Jun-2019 13:41:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/update.php:384) in /var/www/project/public/wp-includes/option.php on line 947
+[24-Jun-2019 13:41:32 UTC] PHP Stack trace:
+[24-Jun-2019 13:41:32 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:41:32 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:41:32 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 13:41:32 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[24-Jun-2019 13:41:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/update.php:384) in /var/www/project/public/wp-includes/option.php on line 948
+[24-Jun-2019 13:41:32 UTC] PHP Stack trace:
+[24-Jun-2019 13:41:32 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:41:32 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:41:32 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 13:41:32 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[24-Jun-2019 13:50:46 UTC] PHP Notice:  Array to string conversion in /var/www/project/public/wp-includes/formatting.php on line 1111
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:10
+[24-Jun-2019 13:50:46 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin.php:152
+[24-Jun-2019 13:50:46 UTC] PHP   4. esc_attr() /var/www/project/public/wp-admin/menu.php:157
+[24-Jun-2019 13:50:46 UTC] PHP   5. wp_check_invalid_utf8() /var/www/project/public/wp-includes/formatting.php:4374
+[24-Jun-2019 13:50:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:10
+[24-Jun-2019 13:50:46 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[24-Jun-2019 13:50:46 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 13:50:46 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 13:50:46 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 13:50:46 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[24-Jun-2019 13:50:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-includes/option.php on line 947
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:46 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 13:50:46 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[24-Jun-2019 13:50:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-includes/option.php on line 948
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:46 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 13:50:46 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[24-Jun-2019 13:50:46 UTC] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /var/www/project/public/wp-includes/formatting.php on line 246
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:46 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:46 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:46 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:46 UTC] PHP   6. preg_match_all() /var/www/project/public/wp-includes/formatting.php:246
+[24-Jun-2019 13:50:46 UTC] PHP Warning:  array_intersect(): Argument #2 is not an array in /var/www/project/public/wp-includes/formatting.php on line 247
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:46 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:46 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:46 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:46 UTC] PHP   6. array_intersect() /var/www/project/public/wp-includes/formatting.php:247
+[24-Jun-2019 13:50:46 UTC] PHP Warning:  preg_split() expects parameter 2 to be string, array given in /var/www/project/public/wp-includes/formatting.php on line 252
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:46 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:46 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:46 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:46 UTC] PHP   6. preg_split() /var/www/project/public/wp-includes/formatting.php:252
+[24-Jun-2019 13:50:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/project/public/wp-includes/formatting.php on line 254
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:46 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:46 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:46 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:46 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/project/public/wp-includes/formatting.php on line 314
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:46 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:46 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:46 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:46 UTC] PHP   6. implode() /var/www/project/public/wp-includes/formatting.php:314
+[24-Jun-2019 13:50:46 UTC] PHP Notice:  Array to string conversion in /var/www/project/public/wp-includes/class-wp-admin-bar.php on line 553
+[24-Jun-2019 13:50:46 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:46 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:46 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:46 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin-header.php:245
+[24-Jun-2019 13:50:46 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 13:50:46 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 13:50:46 UTC] PHP   6. wp_admin_bar_render() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 13:50:46 UTC] PHP   7. WP_Admin_Bar->render() /var/www/project/public/wp-includes/admin-bar.php:95
+[24-Jun-2019 13:50:46 UTC] PHP   8. WP_Admin_Bar->_render() /var/www/project/public/wp-includes/class-wp-admin-bar.php:275
+[24-Jun-2019 13:50:46 UTC] PHP   9. WP_Admin_Bar->_render_group() /var/www/project/public/wp-includes/class-wp-admin-bar.php:444
+[24-Jun-2019 13:50:46 UTC] PHP  10. WP_Admin_Bar->_render_item() /var/www/project/public/wp-includes/class-wp-admin-bar.php:491
+[24-Jun-2019 13:50:46 UTC] PHP  11. WP_Admin_Bar->_render_group() /var/www/project/public/wp-includes/class-wp-admin-bar.php:564
+[24-Jun-2019 13:50:46 UTC] PHP  12. WP_Admin_Bar->_render_item() /var/www/project/public/wp-includes/class-wp-admin-bar.php:491
+[24-Jun-2019 13:50:52 UTC] PHP Notice:  Array to string conversion in /var/www/project/public/wp-includes/formatting.php on line 1111
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:10
+[24-Jun-2019 13:50:52 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin.php:152
+[24-Jun-2019 13:50:52 UTC] PHP   4. esc_attr() /var/www/project/public/wp-admin/menu.php:157
+[24-Jun-2019 13:50:52 UTC] PHP   5. wp_check_invalid_utf8() /var/www/project/public/wp-includes/formatting.php:4374
+[24-Jun-2019 13:50:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:10
+[24-Jun-2019 13:50:52 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[24-Jun-2019 13:50:52 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 13:50:52 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 13:50:52 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 13:50:52 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[24-Jun-2019 13:50:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-includes/option.php on line 947
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:52 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 13:50:52 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[24-Jun-2019 13:50:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-includes/option.php on line 948
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:52 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 13:50:52 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[24-Jun-2019 13:50:52 UTC] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /var/www/project/public/wp-includes/formatting.php on line 246
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:52 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:52 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:52 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:52 UTC] PHP   6. preg_match_all() /var/www/project/public/wp-includes/formatting.php:246
+[24-Jun-2019 13:50:52 UTC] PHP Warning:  array_intersect(): Argument #2 is not an array in /var/www/project/public/wp-includes/formatting.php on line 247
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:52 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:52 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:52 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:52 UTC] PHP   6. array_intersect() /var/www/project/public/wp-includes/formatting.php:247
+[24-Jun-2019 13:50:52 UTC] PHP Warning:  preg_split() expects parameter 2 to be string, array given in /var/www/project/public/wp-includes/formatting.php on line 252
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:52 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:52 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:52 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:52 UTC] PHP   6. preg_split() /var/www/project/public/wp-includes/formatting.php:252
+[24-Jun-2019 13:50:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/project/public/wp-includes/formatting.php on line 254
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:52 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:52 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:52 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:52 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/project/public/wp-includes/formatting.php on line 314
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:52 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:50:52 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:50:52 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:50:52 UTC] PHP   6. implode() /var/www/project/public/wp-includes/formatting.php:314
+[24-Jun-2019 13:50:52 UTC] PHP Notice:  Array to string conversion in /var/www/project/public/wp-includes/class-wp-admin-bar.php on line 553
+[24-Jun-2019 13:50:52 UTC] PHP Stack trace:
+[24-Jun-2019 13:50:52 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/plugins.php:0
+[24-Jun-2019 13:50:52 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/plugins.php:479
+[24-Jun-2019 13:50:52 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin-header.php:245
+[24-Jun-2019 13:50:52 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 13:50:52 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 13:50:52 UTC] PHP   6. wp_admin_bar_render() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 13:50:52 UTC] PHP   7. WP_Admin_Bar->render() /var/www/project/public/wp-includes/admin-bar.php:95
+[24-Jun-2019 13:50:52 UTC] PHP   8. WP_Admin_Bar->_render() /var/www/project/public/wp-includes/class-wp-admin-bar.php:275
+[24-Jun-2019 13:50:52 UTC] PHP   9. WP_Admin_Bar->_render_group() /var/www/project/public/wp-includes/class-wp-admin-bar.php:444
+[24-Jun-2019 13:50:52 UTC] PHP  10. WP_Admin_Bar->_render_item() /var/www/project/public/wp-includes/class-wp-admin-bar.php:491
+[24-Jun-2019 13:50:52 UTC] PHP  11. WP_Admin_Bar->_render_group() /var/www/project/public/wp-includes/class-wp-admin-bar.php:564
+[24-Jun-2019 13:50:52 UTC] PHP  12. WP_Admin_Bar->_render_item() /var/www/project/public/wp-includes/class-wp-admin-bar.php:491
+[24-Jun-2019 13:51:07 UTC] PHP Notice:  Array to string conversion in /var/www/project/public/wp-includes/formatting.php on line 1111
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/index.php:10
+[24-Jun-2019 13:51:07 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin.php:152
+[24-Jun-2019 13:51:07 UTC] PHP   4. esc_attr() /var/www/project/public/wp-admin/menu.php:157
+[24-Jun-2019 13:51:07 UTC] PHP   5. wp_check_invalid_utf8() /var/www/project/public/wp-includes/formatting.php:4374
+[24-Jun-2019 13:51:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/index.php:10
+[24-Jun-2019 13:51:07 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[24-Jun-2019 13:51:07 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 13:51:07 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 13:51:07 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 13:51:07 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[24-Jun-2019 13:51:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-includes/option.php on line 947
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 13:51:07 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 13:51:07 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[24-Jun-2019 13:51:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/formatting.php:1111) in /var/www/project/public/wp-includes/option.php on line 948
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 13:51:07 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[24-Jun-2019 13:51:07 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[24-Jun-2019 13:51:07 UTC] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /var/www/project/public/wp-includes/formatting.php on line 246
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 13:51:07 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:51:07 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:51:07 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:51:07 UTC] PHP   6. preg_match_all() /var/www/project/public/wp-includes/formatting.php:246
+[24-Jun-2019 13:51:07 UTC] PHP Warning:  array_intersect(): Argument #2 is not an array in /var/www/project/public/wp-includes/formatting.php on line 247
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 13:51:07 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:51:07 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:51:07 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:51:07 UTC] PHP   6. array_intersect() /var/www/project/public/wp-includes/formatting.php:247
+[24-Jun-2019 13:51:07 UTC] PHP Warning:  preg_split() expects parameter 2 to be string, array given in /var/www/project/public/wp-includes/formatting.php on line 252
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 13:51:07 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:51:07 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:51:07 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:51:07 UTC] PHP   6. preg_split() /var/www/project/public/wp-includes/formatting.php:252
+[24-Jun-2019 13:51:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/project/public/wp-includes/formatting.php on line 254
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 13:51:07 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:51:07 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:51:07 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:51:07 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/project/public/wp-includes/formatting.php on line 314
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 13:51:07 UTC] PHP   3. require() /var/www/project/public/wp-admin/admin-header.php:236
+[24-Jun-2019 13:51:07 UTC] PHP   4. _wp_menu_output() /var/www/project/public/wp-admin/menu-header.php:272
+[24-Jun-2019 13:51:07 UTC] PHP   5. wptexturize() /var/www/project/public/wp-admin/menu-header.php:233
+[24-Jun-2019 13:51:07 UTC] PHP   6. implode() /var/www/project/public/wp-includes/formatting.php:314
+[24-Jun-2019 13:51:07 UTC] PHP Notice:  Array to string conversion in /var/www/project/public/wp-includes/class-wp-admin-bar.php on line 553
+[24-Jun-2019 13:51:07 UTC] PHP Stack trace:
+[24-Jun-2019 13:51:07 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/index.php:0
+[24-Jun-2019 13:51:07 UTC] PHP   2. include() /var/www/project/public/wp-admin/index.php:111
+[24-Jun-2019 13:51:07 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin-header.php:245
+[24-Jun-2019 13:51:07 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[24-Jun-2019 13:51:07 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[24-Jun-2019 13:51:07 UTC] PHP   6. wp_admin_bar_render() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[24-Jun-2019 13:51:07 UTC] PHP   7. WP_Admin_Bar->render() /var/www/project/public/wp-includes/admin-bar.php:95
+[24-Jun-2019 13:51:07 UTC] PHP   8. WP_Admin_Bar->_render() /var/www/project/public/wp-includes/class-wp-admin-bar.php:275
+[24-Jun-2019 13:51:07 UTC] PHP   9. WP_Admin_Bar->_render_group() /var/www/project/public/wp-includes/class-wp-admin-bar.php:444
+[24-Jun-2019 13:51:07 UTC] PHP  10. WP_Admin_Bar->_render_item() /var/www/project/public/wp-includes/class-wp-admin-bar.php:491
+[24-Jun-2019 13:51:07 UTC] PHP  11. WP_Admin_Bar->_render_group() /var/www/project/public/wp-includes/class-wp-admin-bar.php:564
+[24-Jun-2019 13:51:07 UTC] PHP  12. WP_Admin_Bar->_render_item() /var/www/project/public/wp-includes/class-wp-admin-bar.php:491
+[04-Jul-2019 09:29:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[04-Jul-2019 09:29:02 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:02 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:02 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:10
+[04-Jul-2019 09:29:02 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[04-Jul-2019 09:29:02 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[04-Jul-2019 09:29:02 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[04-Jul-2019 09:29:02 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[04-Jul-2019 09:29:02 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[04-Jul-2019 09:29:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-includes/option.php on line 947
+[04-Jul-2019 09:29:05 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:05 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:05 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 09:29:05 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 09:29:05 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[04-Jul-2019 09:29:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-includes/option.php on line 948
+[04-Jul-2019 09:29:05 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:05 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:05 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 09:29:05 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 09:29:05 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[04-Jul-2019 09:29:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[04-Jul-2019 09:29:10 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:10 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:10 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:10
+[04-Jul-2019 09:29:10 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[04-Jul-2019 09:29:10 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[04-Jul-2019 09:29:10 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[04-Jul-2019 09:29:10 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[04-Jul-2019 09:29:10 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[04-Jul-2019 09:29:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-includes/option.php on line 947
+[04-Jul-2019 09:29:10 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:10 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:10 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 09:29:10 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 09:29:10 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[04-Jul-2019 09:29:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-includes/option.php on line 948
+[04-Jul-2019 09:29:10 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:10 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:10 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 09:29:10 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 09:29:10 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[04-Jul-2019 09:29:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[04-Jul-2019 09:29:22 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:22 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:22 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:10
+[04-Jul-2019 09:29:22 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[04-Jul-2019 09:29:22 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[04-Jul-2019 09:29:22 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[04-Jul-2019 09:29:22 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[04-Jul-2019 09:29:22 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[04-Jul-2019 09:29:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-includes/option.php on line 947
+[04-Jul-2019 09:29:22 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:22 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:22 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 09:29:22 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 09:29:22 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[04-Jul-2019 09:29:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-includes/option.php on line 948
+[04-Jul-2019 09:29:22 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:22 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:22 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 09:29:22 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 09:29:22 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[04-Jul-2019 09:29:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[04-Jul-2019 09:29:25 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:25 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:25 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:10
+[04-Jul-2019 09:29:25 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[04-Jul-2019 09:29:25 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[04-Jul-2019 09:29:25 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[04-Jul-2019 09:29:25 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[04-Jul-2019 09:29:25 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[04-Jul-2019 09:29:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-includes/option.php on line 947
+[04-Jul-2019 09:29:25 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:25 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:25 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 09:29:25 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 09:29:25 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[04-Jul-2019 09:29:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:2) in /var/www/project/public/wp-includes/option.php on line 948
+[04-Jul-2019 09:29:25 UTC] PHP Stack trace:
+[04-Jul-2019 09:29:25 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 09:29:25 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 09:29:25 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 09:29:25 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[04-Jul-2019 18:15:56 UTC] PHP Warning:  Произошла непредвиденная ошибка. Возможно, что-то не так с сайтом WordPress.org или с настройками вашего сервера. Если проблема не решится, обратитесь на <a href="https://ru.wordpress.org/support/">форумы поддержки</a>. (Не удалось установить защищённое соединение с WordPress.org. Пожалуйста, свяжитесь с администратором сервера.) in /var/www/project/public/wp-includes/update.php on line 569
+[04-Jul-2019 18:15:56 UTC] PHP Stack trace:
+[04-Jul-2019 18:15:56 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 18:15:56 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:10
+[04-Jul-2019 18:15:56 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:365
+[04-Jul-2019 18:15:56 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[04-Jul-2019 18:15:56 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[04-Jul-2019 18:15:56 UTC] PHP   6. wp_update_themes() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[04-Jul-2019 18:15:56 UTC] PHP   7. trigger_error() /var/www/project/public/wp-includes/update.php:569
+[04-Jul-2019 18:15:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/update.php:569) in /var/www/project/public/wp-includes/option.php on line 947
+[04-Jul-2019 18:15:57 UTC] PHP Stack trace:
+[04-Jul-2019 18:15:57 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 18:15:57 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 18:15:57 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 18:15:57 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:947
+[04-Jul-2019 18:15:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-includes/update.php:569) in /var/www/project/public/wp-includes/option.php on line 948
+[04-Jul-2019 18:15:57 UTC] PHP Stack trace:
+[04-Jul-2019 18:15:57 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/themes.php:0
+[04-Jul-2019 18:15:57 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/themes.php:180
+[04-Jul-2019 18:15:57 UTC] PHP   3. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 18:15:57 UTC] PHP   4. setcookie() /var/www/project/public/wp-includes/option.php:948
+[04-Jul-2019 18:27:21 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'Leng_team_metabox' not found or invalid function name in /var/www/project/public/wp-admin/includes/template.php on line 1304
+[04-Jul-2019 18:27:21 UTC] PHP Stack trace:
+[04-Jul-2019 18:27:21 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post-new.php:0
+[04-Jul-2019 18:27:21 UTC] PHP   2. include() /var/www/project/public/wp-admin/post-new.php:75
+[04-Jul-2019 18:27:21 UTC] PHP   3. do_meta_boxes() /var/www/project/public/wp-admin/edit-form-advanced.php:635
+[04-Jul-2019 21:15:08 UTC] PHP Parse error:  syntax error, unexpected end of file in /var/www/project/public/wp-content/themes/test/functions.php on line 128
+[04-Jul-2019 21:18:19 UTC] PHP Notice:  Undefined variable: area in /var/www/project/public/wp-content/themes/test/functions.php on line 94
+[04-Jul-2019 21:18:19 UTC] PHP Stack trace:
+[04-Jul-2019 21:18:19 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:18:19 UTC] PHP   2. include() /var/www/project/public/wp-admin/post.php:197
+[04-Jul-2019 21:18:19 UTC] PHP   3. do_meta_boxes() /var/www/project/public/wp-admin/edit-form-advanced.php:635
+[04-Jul-2019 21:18:19 UTC] PHP   4. Leng_team_metabox() /var/www/project/public/wp-admin/includes/template.php:1304
+[04-Jul-2019 21:18:19 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /var/www/project/public/wp-content/themes/test/functions.php on line 94
+[04-Jul-2019 21:18:19 UTC] PHP Stack trace:
+[04-Jul-2019 21:18:19 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:18:19 UTC] PHP   2. include() /var/www/project/public/wp-admin/post.php:197
+[04-Jul-2019 21:18:19 UTC] PHP   3. do_meta_boxes() /var/www/project/public/wp-admin/edit-form-advanced.php:635
+[04-Jul-2019 21:18:19 UTC] PHP   4. Leng_team_metabox() /var/www/project/public/wp-admin/includes/template.php:1304
+[04-Jul-2019 21:23:09 UTC] PHP Warning:  include_once(/var/www/project/public/wp-content/themes/test/inc/funcIntexsoft,php): failed to open stream: No such file or directory in /var/www/project/public/wp-content/themes/test/functions.php on line 4
+[04-Jul-2019 21:23:09 UTC] PHP Stack trace:
+[04-Jul-2019 21:23:09 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:23:09 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/post.php:12
+[04-Jul-2019 21:23:09 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/admin.php:34
+[04-Jul-2019 21:23:09 UTC] PHP   4. require_once() /var/www/project/public/wp-load.php:37
+[04-Jul-2019 21:23:09 UTC] PHP   5. require_once() /var/www/project/public/wp-config.php:89
+[04-Jul-2019 21:23:09 UTC] PHP   6. include() /var/www/project/public/wp-settings.php:499
+[04-Jul-2019 21:23:09 UTC] PHP Warning:  include_once(): Failed opening '/var/www/project/public/wp-content/themes/test/inc/funcIntexsoft,php' for inclusion (include_path='.:/opt/php72/lib/php') in /var/www/project/public/wp-content/themes/test/functions.php on line 4
+[04-Jul-2019 21:23:09 UTC] PHP Stack trace:
+[04-Jul-2019 21:23:09 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:23:09 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/post.php:12
+[04-Jul-2019 21:23:09 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/admin.php:34
+[04-Jul-2019 21:23:09 UTC] PHP   4. require_once() /var/www/project/public/wp-load.php:37
+[04-Jul-2019 21:23:09 UTC] PHP   5. require_once() /var/www/project/public/wp-config.php:89
+[04-Jul-2019 21:23:09 UTC] PHP   6. include() /var/www/project/public/wp-settings.php:499
+[04-Jul-2019 21:23:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:4) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[04-Jul-2019 21:23:09 UTC] PHP Stack trace:
+[04-Jul-2019 21:23:09 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:23:09 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/post.php:12
+[04-Jul-2019 21:23:09 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[04-Jul-2019 21:23:09 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[04-Jul-2019 21:23:09 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[04-Jul-2019 21:23:09 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[04-Jul-2019 21:23:09 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[04-Jul-2019 21:23:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:4) in /var/www/project/public/wp-includes/option.php on line 947
+[04-Jul-2019 21:23:09 UTC] PHP Stack trace:
+[04-Jul-2019 21:23:09 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:23:09 UTC] PHP   2. include() /var/www/project/public/wp-admin/post.php:197
+[04-Jul-2019 21:23:09 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/edit-form-advanced.php:393
+[04-Jul-2019 21:23:09 UTC] PHP   4. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 21:23:09 UTC] PHP   5. setcookie() /var/www/project/public/wp-includes/option.php:947
+[04-Jul-2019 21:23:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:4) in /var/www/project/public/wp-includes/option.php on line 948
+[04-Jul-2019 21:23:09 UTC] PHP Stack trace:
+[04-Jul-2019 21:23:09 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:23:09 UTC] PHP   2. include() /var/www/project/public/wp-admin/post.php:197
+[04-Jul-2019 21:23:09 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/edit-form-advanced.php:393
+[04-Jul-2019 21:23:09 UTC] PHP   4. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 21:23:09 UTC] PHP   5. setcookie() /var/www/project/public/wp-includes/option.php:948
+[04-Jul-2019 21:23:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function intex_is_select() in /var/www/project/public/wp-content/themes/test/functions.php:107
+Stack trace:
+#0 /var/www/project/public/wp-admin/includes/template.php(1304): Leng_team_metabox(Object(WP_Post), Array)
+#1 /var/www/project/public/wp-admin/edit-form-advanced.php(635): do_meta_boxes(Object(WP_Screen), 'side', Object(WP_Post))
+#2 /var/www/project/public/wp-admin/post.php(197): include('/var/www/projec...')
+#3 {main}
+  thrown in /var/www/project/public/wp-content/themes/test/functions.php on line 107
+[04-Jul-2019 21:23:10 UTC] PHP Warning:  include_once(/var/www/project/public/wp-content/themes/test/inc/funcIntexsoft,php): failed to open stream: No such file or directory in /var/www/project/public/wp-content/themes/test/functions.php on line 4
+[04-Jul-2019 21:23:10 UTC] PHP Stack trace:
+[04-Jul-2019 21:23:10 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/admin-ajax.php:0
+[04-Jul-2019 21:23:10 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/admin-ajax.php:22
+[04-Jul-2019 21:23:10 UTC] PHP   3. require_once() /var/www/project/public/wp-load.php:37
+[04-Jul-2019 21:23:10 UTC] PHP   4. require_once() /var/www/project/public/wp-config.php:89
+[04-Jul-2019 21:23:10 UTC] PHP   5. include() /var/www/project/public/wp-settings.php:499
+[04-Jul-2019 21:23:10 UTC] PHP Warning:  include_once(): Failed opening '/var/www/project/public/wp-content/themes/test/inc/funcIntexsoft,php' for inclusion (include_path='.:/opt/php72/lib/php') in /var/www/project/public/wp-content/themes/test/functions.php on line 4
+[04-Jul-2019 21:23:10 UTC] PHP Stack trace:
+[04-Jul-2019 21:23:10 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/admin-ajax.php:0
+[04-Jul-2019 21:23:10 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/admin-ajax.php:22
+[04-Jul-2019 21:23:10 UTC] PHP   3. require_once() /var/www/project/public/wp-load.php:37
+[04-Jul-2019 21:23:10 UTC] PHP   4. require_once() /var/www/project/public/wp-config.php:89
+[04-Jul-2019 21:23:10 UTC] PHP   5. include() /var/www/project/public/wp-settings.php:499
+[04-Jul-2019 21:24:40 UTC] PHP Warning:  include(/var/www/project/public/wp-content/themes/test/inc/funcIntexsoft,php): failed to open stream: No such file or directory in /var/www/project/public/wp-content/themes/test/functions.php on line 4
+[04-Jul-2019 21:24:40 UTC] PHP Stack trace:
+[04-Jul-2019 21:24:40 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:24:40 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/post.php:12
+[04-Jul-2019 21:24:40 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/admin.php:34
+[04-Jul-2019 21:24:40 UTC] PHP   4. require_once() /var/www/project/public/wp-load.php:37
+[04-Jul-2019 21:24:40 UTC] PHP   5. require_once() /var/www/project/public/wp-config.php:89
+[04-Jul-2019 21:24:40 UTC] PHP   6. include() /var/www/project/public/wp-settings.php:499
+[04-Jul-2019 21:24:40 UTC] PHP Warning:  include(): Failed opening '/var/www/project/public/wp-content/themes/test/inc/funcIntexsoft,php' for inclusion (include_path='.:/opt/php72/lib/php') in /var/www/project/public/wp-content/themes/test/functions.php on line 4
+[04-Jul-2019 21:24:40 UTC] PHP Stack trace:
+[04-Jul-2019 21:24:40 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:24:40 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/post.php:12
+[04-Jul-2019 21:24:40 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/admin.php:34
+[04-Jul-2019 21:24:40 UTC] PHP   4. require_once() /var/www/project/public/wp-load.php:37
+[04-Jul-2019 21:24:40 UTC] PHP   5. require_once() /var/www/project/public/wp-config.php:89
+[04-Jul-2019 21:24:40 UTC] PHP   6. include() /var/www/project/public/wp-settings.php:499
+[04-Jul-2019 21:24:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:4) in /var/www/project/public/wp-admin/includes/misc.php on line 1196
+[04-Jul-2019 21:24:40 UTC] PHP Stack trace:
+[04-Jul-2019 21:24:40 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:24:40 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/post.php:12
+[04-Jul-2019 21:24:40 UTC] PHP   3. do_action() /var/www/project/public/wp-admin/admin.php:169
+[04-Jul-2019 21:24:40 UTC] PHP   4. WP_Hook->do_action() /var/www/project/public/wp-includes/plugin.php:465
+[04-Jul-2019 21:24:40 UTC] PHP   5. WP_Hook->apply_filters() /var/www/project/public/wp-includes/class-wp-hook.php:310
+[04-Jul-2019 21:24:40 UTC] PHP   6. wp_admin_headers() /var/www/project/public/wp-includes/class-wp-hook.php:286
+[04-Jul-2019 21:24:40 UTC] PHP   7. header() /var/www/project/public/wp-admin/includes/misc.php:1196
+[04-Jul-2019 21:24:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:4) in /var/www/project/public/wp-includes/option.php on line 947
+[04-Jul-2019 21:24:40 UTC] PHP Stack trace:
+[04-Jul-2019 21:24:40 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:24:40 UTC] PHP   2. include() /var/www/project/public/wp-admin/post.php:197
+[04-Jul-2019 21:24:40 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/edit-form-advanced.php:393
+[04-Jul-2019 21:24:40 UTC] PHP   4. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 21:24:40 UTC] PHP   5. setcookie() /var/www/project/public/wp-includes/option.php:947
+[04-Jul-2019 21:24:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/project/public/wp-content/themes/test/functions.php:4) in /var/www/project/public/wp-includes/option.php on line 948
+[04-Jul-2019 21:24:40 UTC] PHP Stack trace:
+[04-Jul-2019 21:24:40 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:24:40 UTC] PHP   2. include() /var/www/project/public/wp-admin/post.php:197
+[04-Jul-2019 21:24:40 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/edit-form-advanced.php:393
+[04-Jul-2019 21:24:40 UTC] PHP   4. wp_user_settings() /var/www/project/public/wp-admin/admin-header.php:70
+[04-Jul-2019 21:24:40 UTC] PHP   5. setcookie() /var/www/project/public/wp-includes/option.php:948
+[04-Jul-2019 21:24:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function intex_is_select() in /var/www/project/public/wp-content/themes/test/functions.php:107
+Stack trace:
+#0 /var/www/project/public/wp-admin/includes/template.php(1304): Leng_team_metabox(Object(WP_Post), Array)
+#1 /var/www/project/public/wp-admin/edit-form-advanced.php(635): do_meta_boxes(Object(WP_Screen), 'side', Object(WP_Post))
+#2 /var/www/project/public/wp-admin/post.php(197): include('/var/www/projec...')
+#3 {main}
+  thrown in /var/www/project/public/wp-content/themes/test/functions.php on line 107
+[04-Jul-2019 21:25:00 UTC] PHP Warning:  require(/var/www/project/public/wp-content/themes/test/inc/funcIntexsof.php): failed to open stream: No such file or directory in /var/www/project/public/wp-content/themes/test/functions.php on line 4
+[04-Jul-2019 21:25:00 UTC] PHP Stack trace:
+[04-Jul-2019 21:25:00 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:25:00 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/post.php:12
+[04-Jul-2019 21:25:00 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/admin.php:34
+[04-Jul-2019 21:25:00 UTC] PHP   4. require_once() /var/www/project/public/wp-load.php:37
+[04-Jul-2019 21:25:00 UTC] PHP   5. require_once() /var/www/project/public/wp-config.php:89
+[04-Jul-2019 21:25:00 UTC] PHP   6. include() /var/www/project/public/wp-settings.php:499
+[04-Jul-2019 21:25:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/project/public/wp-content/themes/test/inc/funcIntexsof.php' (include_path='.:/opt/php72/lib/php') in /var/www/project/public/wp-content/themes/test/functions.php on line 4
+[04-Jul-2019 21:25:00 UTC] PHP Stack trace:
+[04-Jul-2019 21:25:00 UTC] PHP   1. {main}() /var/www/project/public/wp-admin/post.php:0
+[04-Jul-2019 21:25:00 UTC] PHP   2. require_once() /var/www/project/public/wp-admin/post.php:12
+[04-Jul-2019 21:25:00 UTC] PHP   3. require_once() /var/www/project/public/wp-admin/admin.php:34
+[04-Jul-2019 21:25:00 UTC] PHP   4. require_once() /var/www/project/public/wp-load.php:37
+[04-Jul-2019 21:25:00 UTC] PHP   5. require_once() /var/www/project/public/wp-config.php:89
+[04-Jul-2019 21:25:00 UTC] PHP   6. include() /var/www/project/public/wp-settings.php:499
