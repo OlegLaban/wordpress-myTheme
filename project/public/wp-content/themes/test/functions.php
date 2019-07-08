@@ -116,4 +116,28 @@ function Areas_Langs_metabox( $post ){
         echo 'Языков нет...';
 }
 
+add_action('after_setup_theme', 'addMenu');
 
+function addMenu(){
+    register_nav_menus(array(
+        'top' => 'Top menu',
+        'main_menu' => 'Main menu '
+    ));
+}
+
+add_filter( 'nav_menu_css_class', 'change_menu_item_css_classes', 10, 4 );
+
+function change_menu_item_css_classes( $classes, $item, $args, $depth ) {
+    if( $item->ID === 60 && $args->theme_location === 'main_menu' ){
+        $classes[] = 'dropdown';
+    }
+
+    return $classes;
+}
+
+class My_Walker_Nav_Menu extends Walker_Nav_Menu {
+    function start_lvl(&$output, $depth = 0, $args = array()) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
+    }
+}

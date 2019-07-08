@@ -1,2 +1,4 @@
 .idea
 docker/databases
+project/public/error_l
+project/public/wp-admin/error_l

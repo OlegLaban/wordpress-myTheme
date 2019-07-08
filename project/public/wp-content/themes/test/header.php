@@ -22,13 +22,19 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="header_top">
-                    <div class="header_top_left">
+                    <?php wp_nav_menu(array(
+                            'menu_class' => 'top_nav',
+                            'theme_location' => 'top',
+                            'after' => ' /',
+                            'container_class' => 'header_top_left'
+                    )); ?>
+                    <?php /*<div class="header_top_left">
                         <ul class="top_nav">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="pages/contact.html">Contact</a></li>
                         </ul>
-                    </div>
+                    </div>*/ ?>
                     <div class="header_top_right">
                         <p>Friday, December 05, 2045</p>
                     </div>
@@ -47,7 +53,14 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
+            <?php wp_nav_menu(array(
+                'menu_class' => 'nav navbar-nav main_nav',
+                'theme_location' => 'main_menu',
+                'after' => ' /',
+                'container_class' => 'navbar-collapse collapse',
+                'walker' => new My_Walker_Nav_Menu()
+            )); ?>
+            <?php /*<div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav main_nav">
                     <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
                     <li><a href="#">Technology</a></li>
@@ -65,7 +78,7 @@
                     <li><a href="pages/contact.html">Contact Us</a></li>
                     <li><a href="pages/404.html">404 Page</a></li>
                 </ul>
-            </div>
+            </div>*/?>
         </nav>
     </section>
     <section id="newsSection">
