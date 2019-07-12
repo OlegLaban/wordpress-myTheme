@@ -96,7 +96,13 @@
                         <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/news_thumbnail3.jpg" alt="">My Eight News Item</a></li>
                         <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/news_thumbnail2.jpg" alt="">My Nine News Item</a></li>
                     </ul>
-                    <div class="social_area">
+                    <?php wp_nav_menu(array(
+                        'menu_class' => 'social_nav',
+                        'theme_location' => 'social_nav',
+                        'container_class' => 'social_area',
+                        'walker' => new My_Walker_Nav_Menu()
+                    )); ?>
+                    <?php /*<div class="social_area">
                         <ul class="social_nav">
                             <li class="facebook"><a href="#"></a></li>
                             <li class="twitter"><a href="#"></a></li>
@@ -107,7 +113,7 @@
                             <li class="youtube"><a href="#"></a></li>
                             <li class="mail"><a href="#"></a></li>
                         </ul>
-                    </div>
+                    </div>*/?>
                 </div>
             </div>
         </div>

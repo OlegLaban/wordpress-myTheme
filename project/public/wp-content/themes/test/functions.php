@@ -2,6 +2,8 @@
 
 //include yourself function
 require get_template_directory() . '/inc/funcIntexsoft.php';
+//Включаем поддержку миниатюр.
+add_theme_support( 'post-thumbnails' );
 
 // add style in template
 add_action('wp_enqueue_scripts', 'css_to_wp_head');
@@ -33,6 +35,7 @@ function css_to_wp_head()
 }
 
 add_action( 'init', 'register_posts' );
+
 
 function register_posts()
 {
@@ -75,6 +78,29 @@ function register_posts()
         ),
         'public'             => true,
         'supports'           => array('title','editor','author'),
+        'has_archive'        => true,
+    ));
+
+    //
+    register_post_type('MyPosts', array(
+        'labels'             => array(
+            'name'               => 'Intexsoft posts', // Основное название типа записи
+            'singular_name'      => 'Intex_post', // отдельное название записи типа Book
+            'add_new'            => 'new InPost',
+            'add_new_item'       => 'Add new InPost',
+            'edit_item'          => 'edit InPost',
+            'new_item'           => 'New InPost',
+            'view_item'          => 'View InPost',
+            'search_items'       => 'search InPosts',
+            'not_found'          =>  'InPosts is not defined',
+            'not_found_in_trash' => 'В корзине InPost не найдено',
+            'parent_item_colon'  => '',
+            'menu_name'          => 'InPosts'
+
+        ),
+        'taxonomies'           => array('category'),
+        'public'             => true,
+        'supports'           => array('title','editor', 'thumbnail','author'),
         'has_archive'        => true,
     ));
 
@@ -121,9 +147,76 @@ add_action('after_setup_theme', 'addMenu');
 function addMenu(){
     register_nav_menus(array(
         'top' => 'Top menu',
-        'main_menu' => 'Main menu '
+        'main_menu' => 'Main menu',
+        'social_nav' => 'Social Nav'
     ));
 }
+
+//Подсчет просмотров записи.
+add_action('wp_head', 'kama_postviews');
+function kama_postviews() {
+
+    /* ------------ Настройки -------------- */
+    $meta_key       = 'views';  // Ключ мета поля, куда будет записываться количество просмотров.
+    $who_count      = 1;            // Чьи посещения считать? 0 - Всех. 1 - Только гостей. 2 - Только зарегистрированных пользователей.
+    $exclude_bots   = 1;            // Исключить ботов, роботов, пауков и прочую нечесть :)? 0 - нет, пусть тоже считаются. 1 - да, исключить из подсчета.
+
+    global $user_ID, $post;
+    if(is_singular()) {
+        $id = (int)$post->ID;
+        static $post_views = false;
+        if($post_views) return true; // чтобы 1 раз за поток
+        $post_views = (int)get_post_meta($id,$meta_key, true);
+        $should_count = false;
+        switch( (int)$who_count ) {
+            case 0: $should_count = true;
+                break;
+            case 1:
+                if( (int)$user_ID == 0 )
+                    $should_count = true;
+                break;
+            case 2:
+                if( (int)$user_ID > 0 )
+                    $should_count = true;
+                break;
+        }
+        if( (int)$exclude_bots==1 && $should_count ){
+            $useragent = $_SERVER['HTTP_USER_AGENT'];
+            $notbot = "Mozilla|Opera"; //Chrome|Safari|Firefox|Netscape - все равны Mozilla
+            $bot = "Bot/|robot|Slurp/|yahoo"; //Яндекс иногда как Mozilla представляется
+            if ( !preg_match("/$notbot/i", $useragent) || preg_match("!$bot!i", $useragent) )
+                $should_count = false;
+        }
+
+        if($should_count)
+            if( !update_post_meta($id, $meta_key, ($post_views+1)) ) add_post_meta($id, $meta_key, 1, true);
+    }
+    return true;
+}
+
+
+
+//Корректируем хлебные крошки.
+add_action('bcn_after_fill', 'change_html_breadchump', 10, 1);
+function change_html_breadchump($data)
+{
+    //Правильно ли это, это же костыль!!!
+    /*
+     * Изменяем массив с пунктами меню, удаля последний так как мне не нужна ссылка на список всех постов.
+     * */
+     array_pop($data->trail);
+}
+
+
+//Удаляематрибуты ширины и высоты у изображений.
+add_filter('wp_get_attachment_image_src','delete_width_height', 100, 4);
+
+function delete_width_height($image, $attachment_id, $size, $icon){
+    $image[1] = '';
+    $image[2] = '';
+    return $image;
+}
+
 
 add_filter( 'nav_menu_css_class', 'change_menu_item_css_classes', 10, 4 );
 
@@ -135,9 +228,11 @@ function change_menu_item_css_classes( $classes, $item, $args, $depth ) {
     return $classes;
 }
 
+
 class My_Walker_Nav_Menu extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = array()) {
         $indent = str_repeat("\t", $depth);
         $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
     }
 }
+
