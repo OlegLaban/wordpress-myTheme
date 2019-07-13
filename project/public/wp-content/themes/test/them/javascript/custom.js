@@ -67,3 +67,17 @@ jQuery(window).load(function() { // makes sure the whole site is loaded
         'overflow': 'visible'
     });
 })
+
+$(document).ready(function(){
+    $('#search-button').on('click', function(){
+        $.ajax({
+            url: window.wp_data.ajax_url,
+            type: 'POST',
+            data: 'action=intexosft&param1=' + $('#search-input').val() + '', // можно также передать в виде массива или объекта
+        success: function( data ) {
+            $('#wrap-search').html(data);
+        }
+    });
+    });
+
+});

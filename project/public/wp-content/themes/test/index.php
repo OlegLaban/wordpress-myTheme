@@ -337,6 +337,7 @@
                     </div>
                     <div class="single_sidebar wow fadeInDown">
                         <h2><span>Sponsor</span></h2>
+                        <?php dynamic_sidebar( 'search_side' ); ?>
                         <a class="sideAdd" href="#"><img src="<?php echo get_template_directory_uri() ?>/images/add_img.jpg" alt=""></a> </div>
                     <div class="single_sidebar wow fadeInDown">
                         <h2><span>Category Archive</span></h2>

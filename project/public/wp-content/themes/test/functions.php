@@ -209,9 +209,9 @@ function change_html_breadchump($data)
 
 
 //Удаляематрибуты ширины и высоты у изображений.
-add_filter('wp_get_attachment_image_src','delete_width_height', 100, 4);
+add_filter('wp_get_attachment_image_src','delete_width_height', 100, 1);
 
-function delete_width_height($image, $attachment_id, $size, $icon){
+function delete_width_height($image){
     $image[1] = '';
     $image[2] = '';
     return $image;
@@ -236,3 +236,35 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
     }
 }
 
+
+
+
+
+function Intex_Widget_For_Search() {
+    register_widget( 'Intex_Widget_For_Search' );
+}
+add_action( 'widgets_init', 'Intex_Widget_For_Search' );
+
+function intex_search_register_wp_sidebars() {
+
+    /* В боковой колонке - первый сайдбар */
+    register_sidebar(
+        array(
+            'id' => 'search_side', // уникальный id
+            'name' => 'Search', // название сайдбара
+            'description' => 'Перетащите сюда виджеты, чтобы добавить их в сайдбар.', // описание
+            'before_widget' => '<div id="%1$s" class="side widget %2$s">', // по умолчанию виджеты выводятся <li>-списком
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">', // по умолчанию заголовки виджетов в <h2>
+            'after_title' => '</h3>'
+        )
+    );
+}
+
+add_action( 'widgets_init', 'intex_search_register_wp_sidebars' );
+
+//Инициализируем wiget.
+require get_template_directory() . '/wigets/wiget.php';
+
+//Функции для работы ajax запроса.
+require get_template_directory() . '/wigets/ajax-query.php';

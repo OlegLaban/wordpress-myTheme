@@ -1,7 +1,6 @@
 .idea
+error_l
 docker/databases
-project/public/error_l
-project/public/wp-admin/error_l
 project/public/wp-content/uploads
 project/public/wp-content/themes/test/images
 project/public/wp-content/themes/test/them/css/images
