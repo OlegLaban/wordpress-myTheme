@@ -137,36 +137,33 @@
                         </div>
                         <div class="technology">
                             <div class="single_post_content">
-                                <h2><span>Technology</span></h2>
+                                <h2><span><?php echo get_cat_name(9); ?></span></h2>
+                                <?php
+                                    $queryParams = array(
+                                        'category'    => 9,
+                                        'orderby'     => 'date',
+                                        'order'       => 'ASC',
+                                        'post_type'   => 'MyPosts'
+                                    );
+                                    $posts = get_posts($queryParams);
+                                    $firstPost = array_shift($posts);
+                                ?>
                                 <ul class="business_catgnav">
                                     <li>
-                                        <figure class="bsbig_fig wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="featured_img"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/featured_img3.jpg"> <span class="overlay"></span> </a>
-                                            <figcaption> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                                        <figure class="bsbig_fig wow fadeInDown"> <a href="<?php echo $firstPost->guid; ?>" class="featured_img"> <?php echo get_the_post_thumbnail($firstPost->ID, 'medium'); ?> <span class="overlay"></span> </a>
+                                            <figcaption> <a href="<?php echo $firstPost->guid; ?>"><?php echo $firstPost->post_title; ?></a> </figcaption>
+                                            <p><?php echo mb_substr($firstPost->post_content, 0, 120); ?></p>
                                         </figure>
                                     </li>
                                 </ul>
                                 <ul class="spost_nav">
+                                    <?php foreach($posts as $post): ?>
                                     <li>
-                                        <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img1.jpg"> </a>
-                                            <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                                        <div class="media wow fadeInDown"> <a href="<?php echo $post->guid; ?>" class="media-left"> <?php echo get_the_post_thumbnail($post->ID, 'medium'); ?> </a>
+                                            <div class="media-body"> <a href="<?php echo $post->guid; ?>" class="catg_title"><?php echo $post->post_title; ?></a> </div>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img2.jpg"> </a>
-                                            <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img1.jpg"> </a>
-                                            <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img2.jpg"> </a>
-                                            <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
-                                        </div>
-                                    </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                         </div>
@@ -207,24 +204,37 @@
                         </ul>
                     </div>
                     <div class="single_post_content">
-                        <h2><span>Games</span></h2>
+                        <h2><span><?php echo get_cat_name(7) ?></span></h2>
                         <div class="single_post_content_left">
+                            <?php
+                                $queryParams = array(
+                                        'category'    => 7,
+                                        'orderby'     => 'date',
+                                        'order'       => 'ASC',
+                                        'post_type'   => 'MyPosts'
+                                );
+                                $posts = get_posts($queryParams);
+                                $firstPost = array_shift($posts);
+                            ?>
                             <ul class="business_catgnav">
                                 <li>
-                                    <figure class="bsbig_fig  wow fadeInDown"> <a class="featured_img" href="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/pages/single_page.html"> <img src="<?php echo get_template_directory_uri() ?>/images/featured_img1.jpg" alt=""> <span class="overlay"></span> </a>
-                                        <figcaption> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                                    <figure class="bsbig_fig  wow fadeInDown"> <a class="featured_img" href="<?php echo $firstPost->guid; ?>"> <?php echo get_the_post_thumbnail($firstPost->ID, 'medium'); ?> <span class="overlay"></span> </a>
+                                        <figcaption> <a href="<?php echo $firstPost->guid; ?>"><?php echo $firstPost->post_title; ?></a> </figcaption>
+                                        <p><?php echo mb_substr($firstPost->post_content, 0, 150); ?></p>
                                     </figure>
                                 </li>
                             </ul>
                         </div>
                         <div class="single_post_content_right">
                             <ul class="spost_nav">
-                                <li>
-                                    <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img1.jpg"> </a>
-                                        <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
-                                    </div>
-                                </li>
+                                <?php foreach($posts as $post): ?>
+                                    <li>
+                                        <div class="media wow fadeInDown"> <a href="<?php echo $post->guid; ?>" class="media-left"> <?php echo get_the_post_thumbnail($post->ID, 'medium') ?> </a>
+                                            <div class="media-body"> <a href="<?php echo $post->guid; ?>l" class="catg_title"><?php echo $post->post_title; ?></a> </div>
+                                        </div>
+                                    </li>
+                                <?php endforeach; ?>
+                                <?/*
                                 <li>
                                     <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img2.jpg"> </a>
                                         <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
@@ -239,7 +249,7 @@
                                     <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img2.jpg"> </a>
                                         <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
                                     </div>
-                                </li>
+                                </li>*/?>
                             </ul>
                         </div>
                     </div>
@@ -274,22 +284,6 @@
                                 </div>
                             </li>
                             <?php endforeach; ?>
-                            <?/*
-                            <li>
-                                <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img2.jpg"> </a>
-                                    <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img1.jpg"> </a>
-                                    <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media wow fadeInDown"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="media-left"> <img alt="" src="<?php echo get_template_directory_uri() ?>/images/post_img2.jpg"> </a>
-                                    <div class="media-body"> <a href="<?php echo get_template_directory_uri() ?>/pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
-                                </div>
-                            </li>*/?>
                         </ul>
                     </div>
                     <div class="single_sidebar">

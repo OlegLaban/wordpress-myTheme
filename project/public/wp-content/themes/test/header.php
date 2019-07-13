@@ -25,7 +25,7 @@
                     <?php wp_nav_menu(array(
                             'menu_class' => 'top_nav',
                             'theme_location' => 'top',
-                            'after' => ' /',
+                            'after' => '',
                             'container_class' => 'header_top_left'
                     )); ?>
                     <?php /*<div class="header_top_left">
@@ -56,7 +56,7 @@
             <?php wp_nav_menu(array(
                 'menu_class' => 'nav navbar-nav main_nav',
                 'theme_location' => 'main_menu',
-                'after' => ' /',
+                'after' => '',
                 'container_class' => 'navbar-collapse collapse',
                 'walker' => new My_Walker_Nav_Menu()
             )); ?>
