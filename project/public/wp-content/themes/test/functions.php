@@ -235,46 +235,5 @@ function change_menu_item_css_classes( $classes, $item, $args, $depth ) {
 
 add_filter( 'nav_menu_css_class', 'change_menu_item_css_classes', 10, 4 );
 
-// Регистрируем wiget для поиска по записям.
-function Intex_Widget_For_Search() {
-    register_widget( 'Intex_Widget_For_Search' );
-}
-add_action( 'widgets_init', 'Intex_Widget_For_Search' );
-
-function intex_search_register_wp_sidebars() {
-
-    /* В боковой колонке - первый сайдбар */
-    register_sidebar(
-        array(
-            'id' => 'search_side', // уникальный id
-            'name' => 'Search', // название сайдбара
-            'description' => 'Перетащите сюда виджеты, чтобы добавить их в сайдбар.', // описание
-            'before_widget' => '<div id="%1$s" class="side widget %2$s">', // по умолчанию виджеты выводятся <li>-списком
-            'after_widget' => '</div>',
-            'before_title' => '<h3 class="widget-title">', // по умолчанию заголовки виджетов в <h2>
-            'after_title' => '</h3>'
-        )
-    );
-}
-
-add_action( 'widgets_init', 'intex_search_register_wp_sidebars' );
-
-//Выводим в шапку параметры для обращения к admin-ajax.php
-function js_variables(){
-    $variables = array (
-        'ajax_url' => admin_url('admin-ajax.php'),
-        'is_mobile' => wp_is_mobile()
-        // Тут обычно какие-то другие переменные
-    );
-    echo '<script type="text/javascript"> window.wp_data = ' .   json_encode($variables) .  ' </script>';
-}
-add_action('wp_head','js_variables');
-
 //Изменение второго сверху меню
 require get_template_directory() . '/intex_inc/walker_top_menu.php';
-
-//Инициализируем wiget.
-require get_template_directory() . '/wigets/wiget.php';
-
-//Функции для работы ajax запроса.
-require get_template_directory() . '/wigets/ajax-query.php';
