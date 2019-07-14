@@ -58,27 +58,8 @@
                 'theme_location' => 'main_menu',
                 'after' => '',
                 'container_class' => 'navbar-collapse collapse',
-                'walker' => new My_Walker_Nav_Menu()
+                'walker' => new Walker_For_Head_Nav_Menu()
             )); ?>
-            <?php /*<div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav main_nav">
-                    <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Android</a></li>
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Nokia</a></li>
-                            <li><a href="#">Walton Mobile</a></li>
-                            <li><a href="#">Sympony</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Laptops</a></li>
-                    <li><a href="#">Tablets</a></li>
-                    <li><a href="pages/contact.html">Contact Us</a></li>
-                    <li><a href="pages/404.html">404 Page</a></li>
-                </ul>
-            </div>*/?>
         </nav>
     </section>
     <section id="newsSection">
@@ -99,21 +80,8 @@
                     <?php wp_nav_menu(array(
                         'menu_class' => 'social_nav',
                         'theme_location' => 'social_nav',
-                        'container_class' => 'social_area',
-                        'walker' => new My_Walker_Nav_Menu()
+                        'container_class' => 'social_area'
                     )); ?>
-                    <?php /*<div class="social_area">
-                        <ul class="social_nav">
-                            <li class="facebook"><a href="#"></a></li>
-                            <li class="twitter"><a href="#"></a></li>
-                            <li class="flickr"><a href="#"></a></li>
-                            <li class="pinterest"><a href="#"></a></li>
-                            <li class="googleplus"><a href="#"></a></li>
-                            <li class="vimeo"><a href="#"></a></li>
-                            <li class="youtube"><a href="#"></a></li>
-                            <li class="mail"><a href="#"></a></li>
-                        </ul>
-                    </div>*/?>
                 </div>
             </div>
         </div>

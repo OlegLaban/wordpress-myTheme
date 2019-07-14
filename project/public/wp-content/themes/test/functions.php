@@ -1,12 +1,10 @@
 <?php
-
 //include yourself function
 require get_template_directory() . '/inc/funcIntexsoft.php';
 //Включаем поддержку миниатюр.
 add_theme_support( 'post-thumbnails' );
 
 // add style in template
-add_action('wp_enqueue_scripts', 'css_to_wp_head');
 function css_to_wp_head()
 {
     wp_enqueue_style('main-style', get_stylesheet_uri());
@@ -34,9 +32,9 @@ function css_to_wp_head()
     wp_enqueue_script('html5shiv-min-js', get_template_directory_uri() . '/them/javascript/html5shiv.min.js', array(), '', true);
 }
 
-add_action( 'init', 'register_posts' );
+add_action('wp_enqueue_scripts', 'css_to_wp_head');
 
-
+//Регистрируем произвольные типы постов.
 function register_posts()
 {
     register_post_type('Areas', array(
@@ -107,11 +105,13 @@ function register_posts()
 }
 
 
-add_action('add_meta_boxes', function () {
-    add_meta_box( 'Leng_team', 'Сфера применения', 'Leng_team_metabox', 'Langs', 'side', 'low'  );
-}, 1);
+add_action( 'init', 'register_posts' );
 
 // метабокс с селектом команд
+/*
+ * Здесь создаются две функции каждая из которых определяет верстку (внешний вид метабоксов). а после каждой функции
+ *  следует хук для добаления метабокса.
+ */
 function Leng_team_metabox( $post ){
     $areas = get_posts(array( 'post_type'=>'Areas', 'posts_per_page'=>-1, 'orderby'=>'post_title', 'order'=>'ASC' ));
 
@@ -126,8 +126,8 @@ function Leng_team_metabox( $post ){
         echo 'Сфер нет...';
 }
 
-add_action('add_meta_boxes', function(){
-    add_meta_box( 'langs', 'Языки сферы', 'Areas_Langs_metabox', 'Areas', 'side', 'low'  );
+add_action('add_meta_boxes', function () {
+    add_meta_box( 'Leng_team', 'Сфера применения', 'Leng_team_metabox', 'Langs', 'side', 'low'  );
 }, 1);
 
 function Areas_Langs_metabox( $post ){
@@ -142,8 +142,12 @@ function Areas_Langs_metabox( $post ){
         echo 'Языков нет...';
 }
 
-add_action('after_setup_theme', 'addMenu');
+add_action('add_meta_boxes', function(){
+    add_meta_box( 'langs', 'Языки сферы', 'Areas_Langs_metabox', 'Areas', 'side', 'low'  );
+}, 1);
 
+
+//Функция для добавления меню в wordpress.
 function addMenu(){
     register_nav_menus(array(
         'top' => 'Top menu',
@@ -152,8 +156,9 @@ function addMenu(){
     ));
 }
 
+add_action('after_setup_theme', 'addMenu');
+
 //Подсчет просмотров записи.
-add_action('wp_head', 'kama_postviews');
 function kama_postviews() {
 
     /* ------------ Настройки -------------- */
@@ -194,10 +199,10 @@ function kama_postviews() {
     return true;
 }
 
+add_action('wp_head', 'kama_postviews');
 
 
 //Корректируем хлебные крошки.
-add_action('bcn_after_fill', 'change_html_breadchump', 10, 1);
 function change_html_breadchump($data)
 {
     //Правильно ли это, это же костыль!!!
@@ -207,19 +212,19 @@ function change_html_breadchump($data)
      array_pop($data->trail);
 }
 
+add_action('bcn_after_fill', 'change_html_breadchump', 10, 1);
+
 
 //Удаляематрибуты ширины и высоты у изображений.
-add_filter('wp_get_attachment_image_src','delete_width_height', 100, 1);
-
 function delete_width_height($image){
     $image[1] = '';
     $image[2] = '';
     return $image;
 }
 
+add_filter('wp_get_attachment_image_src','delete_width_height', 100, 1);
 
-add_filter( 'nav_menu_css_class', 'change_menu_item_css_classes', 10, 4 );
-
+//Изменяем классы у меню.
 function change_menu_item_css_classes( $classes, $item, $args, $depth ) {
     if( $item->ID === 60 && $args->theme_location === 'main_menu' ){
         $classes[] = 'dropdown';
@@ -228,18 +233,9 @@ function change_menu_item_css_classes( $classes, $item, $args, $depth ) {
     return $classes;
 }
 
+add_filter( 'nav_menu_css_class', 'change_menu_item_css_classes', 10, 4 );
 
-class My_Walker_Nav_Menu extends Walker_Nav_Menu {
-    function start_lvl(&$output, $depth = 0, $args = array()) {
-        $indent = str_repeat("\t", $depth);
-        $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
-    }
-}
-
-
-
-
-
+// Регистрируем wiget для поиска по записям.
 function Intex_Widget_For_Search() {
     register_widget( 'Intex_Widget_For_Search' );
 }
@@ -262,6 +258,20 @@ function intex_search_register_wp_sidebars() {
 }
 
 add_action( 'widgets_init', 'intex_search_register_wp_sidebars' );
+
+//Выводим в шапку параметры для обращения к admin-ajax.php
+function js_variables(){
+    $variables = array (
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'is_mobile' => wp_is_mobile()
+        // Тут обычно какие-то другие переменные
+    );
+    echo '<script type="text/javascript"> window.wp_data = ' .   json_encode($variables) .  ' </script>';
+}
+add_action('wp_head','js_variables');
+
+//Изменение второго сверху меню
+require get_template_directory() . '/intex_inc/walker_top_menu.php';
 
 //Инициализируем wiget.
 require get_template_directory() . '/wigets/wiget.php';
